@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="static/main.css" />
+    <title>WebGL - Minecraft</title>
+  </head>
+  <body>
+    <div class="container">
+      <canvas id="glCanvas" class="card" width="1280" height="960">
+        Your browser does not support HTML5 </canvas
+      >
+      <canvas id="textCanvas" width="1280" height="960">
+        Your browser does not support HTML5 </canvas
+      >
+    </div>
+    <div class="settings">
+    <form>
+      <h1>Settings</h1>
+      <h3>Forces</h3>
+      <input type="checkbox" id="gravityCheck" checked>
+      <label for="gravityCheck"> Enable Gravity</label><br>
+      Gravity = <input type="form" id="gravityForm" value="9.81"><br>
+      <input type="checkbox" id="windCheck" checked>
+      <label for="windCheck"> Enable Wind</label><br>
+      Wind = <input type="form" id="windForm" value="5"><br>
+      <input type="checkbox" id="dampCheck" checked>
+      <label for="dampCheck"> Enable Damping</label><br>
+      Damping = <input type="form" id="dampForm" value="0.1"><br>
+      <input type="checkbox" id="Shear" checked>
+      <label for="Shear"> Enable Shear Springs</label><br>
+      <input type="checkbox" id="Bend" checked>
+      <label for="Bend"> Enable Bend Springs</label><br>
+      Stiffness = <input type="form" id="Stiffness" value="100"><br>
+      <h3>Objects</h3>
+      <input type="checkbox" id="sphereCheck">
+      <label for="sphereCheck"> Enable Sphere</label><br>
+      Sphere center x <input type="form" id="sphereX" value="0"><br> 
+      Sphere center y <input type="form" id="sphereY" value="-1"><br> 
+      Sphere center z <input type="form" id="sphereZ" value="2"><br> 
+      Sphere radius <input type="form" id="sphereR" value="1"><br>
+      <input type="checkbox" id="cubeCheck">
+      <label for="cubeCheck"> Enable Cube</label><br>
+      Cube center x <input type="form" id="cubeX" value="0"><br> 
+      Cube center y <input type="form" id="cubeY" value="-1"><br> 
+      Cube center z <input type="form" id="cubeZ" value="-1"><br> 
+      Cube length <input type="form" id="cubeL" value="1"><br> 
+      <h3>Other</h3>
+      Particle Mass <input type="form" id="mass" value="0.1"><br>
+      Number of Particles x <input type="form" id="numPartX" value="50"><br>
+      Number of Particles y <input type="form" id="numPartY" value="50"><br>
+      Spacing between Particles <input type="form" id="spacing" value="0.1"><br>
+      Timestep <input type="form" id="timeStep" value="0.005"><br>
+      <h3>Situations</h3>
+      <input type="radio" id="clothesline" value="clothesline" name="situation" checked>
+      <label for="clothesline">Clothesline</label><br>
+      <input type="radio" id="falling" value="falling" name="situation">
+      <label for="falling">Falling</label><br>
+      <input type="radio" id="hammock" value="hammock" name="situation">
+      <label for="Hammock">Hammock</label><br>
+      <input type="radio" id="twoanchor" value="twoanchor" name="situation">
+      <label for="twoanchor">Two Anchor</label><br>
+      <br>
+      <input type="button" id="resetButton" value="Reset"></form>
+      
+    </form>
+    </div>
+    <br />
+<script type="module" src="./index.js"></script>
+
+    <br />
+  </body>
+</html>
